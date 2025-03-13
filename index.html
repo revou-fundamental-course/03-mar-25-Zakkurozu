@@ -4,17 +4,284 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>GOS | Great Our School</title>
   </head>
   <body>
     <!-- main header -->
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/logo.svg" alt="logo" />
+            <h1>Great Our School</h1>
+          </a>
+        </div>
+        <div class="nav-links">
+          <ul id="menu-list">
+            <li><a href="#hero" class="active">home</a></li>
+            <li><a href="#profile">our profile</a></li>
+            <li><a href="#achievement">achievement</a></li>
+            <li><a href="#message">message us</a></li>
+          </ul>
+        </div>
+        <div class="act-btn">
+          <i class="fa-solid fa-bars" id="togglemenu"></i>
+        </div>
+      </nav>
+    </header>
 
     <!-- main content -->
-    <main></main>
+    <main>
+      <!-- prompt start -->
+      <section class="prompt">
+        <div class="card">
+          <h3>Hello, What's your name?</h3>
+          <form id="name-form" class="form">
+            <input
+              type="text"
+              name="urName"
+              placeholder="Please add your name"
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- prompt start -->
+
+      <!-- hero section start -->
+      <section class="hero" id="hero">
+        <div class="banner">
+          <div class="layer-section">
+            <div class="content-section">
+              <h2>
+                Hey
+                <span
+                  style="color: #feb12f; text-transform: capitalize"
+                  id="urName"
+                  >You</span
+                >, welcome to website
+              </h2>
+              <h3>
+                Gret <span style="color: #feb12f">Our</span>
+                <span style="color: #5d5cdb">School</span> is an innovative
+                learning hub, empowering students to achieve greatness.
+              </h3>
+              <a class="btn" href="#profile">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero section end -->
+
+      <!-- first section start -->
+      <section class="first-section" id="profile">
+        <div class="teks">
+          <h4>Our Profile</h4>
+          <h3>Discover our journey</h3>
+          <p>Empowering students with knowledge, creativity, and leadership.</p>
+        </div>
+        <div class="container">
+          <div class="first-layout-section">
+            <div class="thumb">
+              <div class="bg-orange">
+                <div class="wrapper">
+                  <img src="./assets/learn.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h3>About G<span style="color: #feb12f">O</span>S</h3>
+              <p>
+                Gret Our School is a place where education meets innovation. We
+                provide a dynamic learning environment, fostering critical
+                thinking and personal growth. With experienced educators and
+                modern facilities, we ensure every student reaches their full
+                potential.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- first section end -->
+
+      <!-- second section start tidak jadi dibuat karena kehabisan waktu :) -->
+      <!-- <section class="second-section">
+        <p>kedua</p>
+      </section> -->
+      <!-- second section end -->
+
+      <!-- third section start -->
+      <section class="third-section" id="achievement">
+        <div class="container">
+          <div class="teks">
+            <h4>Our Achievement</h4>
+            <h3>Celebrating Excellence & Success</h3>
+            <p>
+              We take pride in the achievements of our students and institution.
+              Here are some of our proudest moments
+            </p>
+          </div>
+          <div class="third-layout-section">
+            <div class="card">
+              <div class="title">
+                <h4>Academic Excellence</h4>
+                <div class="bg">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+              </div>
+              <div class="thumb">
+                <img src="./assets/academic success.jpg" alt="" />
+              </div>
+              <div class="desc">
+                <p>
+                  Our students have achieved top rankings in national and
+                  international competitions.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="title">
+                <h4>Sports and Art</h4>
+                <div class="bg">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+              </div>
+              <div class="thumb">
+                <img src="./assets/sport success.jpg" alt="" />
+              </div>
+              <div class="desc">
+                <p>
+                  Victories in inter-school tournaments and outstanding
+                  performances in creative arts.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="title">
+                <h4>Community Impact</h4>
+                <div class="bg">
+                  <i class="fa-solid fa-people-group"></i>
+                </div>
+              </div>
+              <div class="thumb">
+                <img src="./assets//comunity.jpg" alt="" />
+              </div>
+              <div class="desc">
+                <p>
+                  Students actively participate in social initiatives, making a
+                  difference in the community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- third section end -->
+
+      <!-- fourth section start -->
+      <section class="fourth-section" id="message">
+        <div class="container">
+          <div class="teks">
+            <h4>Message us</h4>
+            <h3>Got Questions? Let's Talk!</h3>
+            <p>
+              We'd love to hear from you. Whether you have inquiries about our
+              programs, facilities, or admissions, feel free to reach out!
+            </p>
+          </div>
+          <div class="fourth-layout-section">
+            <div class="form">
+              <form id="message-form">
+                <div class="form-group">
+                  <label for="">Name</label>
+                  <input
+                    name="nama"
+                    type="text"
+                    placeholder="Add your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Birth date</label>
+                  <input name="birth" type="date" required />
+                </div>
+                <div class="form-group">
+                  <label for="">Gender</label>
+                  <div class="gender">
+                    <div class="male">
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        value="Male"
+                        checked
+                      />
+                      <label for="male">Male</label>
+                    </div>
+                    <div class="female">
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        value="Female"
+                      />
+                      <label for="female">Female</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Message</label>
+                  <textarea
+                    name="message"
+                    placeholder="Please feel free"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+            <div class="preview-message">
+              <h4>Preview message</h4>
+              <div class="wraper">
+                <div class="wrap">
+                  <p>
+                    Name :
+                    <span id="nama" style="text-transform: capitalize"
+                      >John Doe</span
+                    >
+                  </p>
+                  <p>Gender : <span id="gender">Male</span></p>
+                  <p>Birth date : <span id="birth">2000-01-01</span></p>
+                  <div class="message">
+                    <p>Message :</p>
+                    <p>
+                      "
+                      <span id="pesan">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Similique nam blanditiis consectetur in magni qui.
+                      </span>
+                      "
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- fourth section end -->
+    </main>
 
     <!-- main footer -->
-    <footer></footer>
+    <footer>
+      <p>Copyright &copy; Great Our School | All Right Reserver 2025</p>
+    </footer>
 
     <script src="/js/script.js"></script>
   </body>
